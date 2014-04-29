@@ -2,3 +2,12 @@ language: node_js
 node_js:
 - '0.10'
 before_install: npm install -g mocha
+deploy:
+  provider: s3
+  access_key_id: AKIAJHQKUBMUPZYUQX7Q
+  secret_access_key:
+    secure: VxMNFpvK/TxUeXxeB2eehpzLikefdIbERUFkGN1sAfEPJKSgpkiukQIITPOv6iFKnspje8U+NPl3UwURgm9bFnRnU876F9JpPy46kBJt6h1IDhVdD3q69uevJDbldOFoE1I2d4piWtimXkErrBjjqvT/mGYSNjJL5zoK/3q59Kg=
+  bucket: deploy
+  upload-dir: pietrzykowski
+  on:
+    repo: damian0501/cilab7
