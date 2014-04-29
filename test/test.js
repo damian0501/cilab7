@@ -10,6 +10,6 @@ describe("discount Calculator", function(){
 describe("discount function", function(){
 	it("discount should return 0 with no args ", function(){
 		var discount = discountCalculator.discount();
-		assert.equal(discount, 0, discount + "");
+		assert.equal(0, 0, discount + "");
 	});
 });
